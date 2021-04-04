@@ -1,0 +1,30 @@
+html, body {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/header/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+header, section {
+  height: 100vh;
+}
+
+#content {
+}
+
+section {
+  background: #1a1a1a;
+}
+
+hr {
+  padding: 5px;
+  background: white;
+  margin: 0;
+  border: none;
+}
