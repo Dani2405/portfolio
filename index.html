@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Daniel Fischer - Portfolio</title>
   <!-- Libraries -->
     <!-- animate.css -->
@@ -28,42 +29,50 @@
 <!-- /Libraries -->
 
   <!-- Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
   <!-- CSS -->
   <link href="./src/styles/index.css" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="./src/scripts/main.js"></script>
 </head>
 <body>
-  <nav style="--animate-duration: 1s;">
-    <a href="#home" class="navLink">
-      <li>Home</li>
+  <nav id="menu" style="--animate-duration: 1s;">
+    <a href="javascript:void(0);" id="menuIcon" onclick="toggleMenu()">
+      <span class="material-icons-round">menu</span>
     </a>
 
-    <a href="#about" class="navLink">
-      <li>About me</li>
-    </a>
+    <div id="navLinks">
+      <a href="#home" class="navLink">
+        <li>Home</li>
+      </a>
 
-    <a href="#education" class="navLink">
-      <li>Education/Work</li>
-    </a>
+      <a href="#about" class="navLink">
+        <li>About me</li>
+      </a>
 
-    <a href="#skills" class="navLink">
-      <li>Skills</li>
-    </a>
+      <a href="#education" class="navLink">
+        <li>Education/Work</li>
+      </a>
 
-    <a href="#projects" class="navLink">
-      <li>Projects</li>
-    </a>
+      <a href="#skills" class="navLink">
+        <li>Skills</li>
+      </a>
 
-    <a href="#contact" class="navLink">
-      <li>Contact</li>
-    </a>
+      <a href="#projects" class="navLink">
+        <li>Projects</li>
+      </a>
+
+      <a href="#contact" class="navLink">
+        <li>Contact</li>
+      </a>
+    </div>
   </nav>
 
   <header id="home">
     <div>
       <div id="headerAvatar"></div>
-      <h1>Daniel Fischer</h1>
-      <h2>Developer</h2>
+      <h1>Daniel J. Fischer</h1>
+      <h2>Full Stack Developer</h2>
       <h3>🇨🇭 Bellinzona, Switzerland</h3>
 
       <div id="headerLinks" class="links">
@@ -105,8 +114,6 @@
     </div>
   </header>
 
-  <hr>
-
   <section id="about">
     <h3>About me</h3>
   </section>
@@ -115,35 +122,259 @@
 
   <section id="education">
     <h3>Education/Work</h3>
+    <div id="educationList">
+
+      <div class="educationItem">
+        <div class="educationItemIcon">🏛</div>
+        <div class="educationItemDesc">
+          <h2>Future <br> ETH Zürich</h2>
+          <h4>Type: Polytechnic · Technical University</h4>
+          <h4>Duration: 3 years</h4>
+          <h4>Diploma: Bachelor in Computer Science</h4>
+        </div>
+      </div>
+
+      <div id="educationConnectorFuture" class="educationConnector"></div>
+
+      <div class="educationItem">
+        <div class="educationItemIcon">🎓</div>
+        <div class="educationItemDesc">
+          <h2>2020-2022 - Current <br> Liceo Cantonale Bellinzona</h2>
+          <h4>Type: High School</h4>
+          <h4>Duration: 2 years (Repeated)</h4>
+          <h4>Diploma: High School level maturity</h4>
+        </div>
+      </div>
+
+      <div class="educationConnector"></div>
+
+      <div class="educationItem">
+        <div class="educationItemIcon">🏫</div>
+        <div class="educationItemDesc">
+          <h2>2019-2020 <br> CPT Bellinzona</h2>
+          <h4>Type: Vocational School</h4>
+          <h4>Duration: 1 year</h4>
+          <h4>Diploma: Technical maturity</h4>
+        </div>
+      </div>
+
+      <div class="educationConnector"></div>
+
+      <div class="educationItem">
+        <div class="educationItemIcon">💼</div>
+        <div class="educationItemDesc">
+          <h2>2015-2019 <br> SPAI Locarno</h2>
+          <h4>Type: Apprenticeship in Computer Science</h4>
+          <h4>Employer: Imerys Graphite & Carbon, Bironico</h4>
+          <h4>Duration: 4 years</h4>
+          <h4>Diploma: Computer Scientist, Federal Diploma of Vocational Education and Training</h4>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <hr>
 
   <section id="skills">
     <h3>Skills</h3>
-  </section>
+    <div id="skillLists">
+      <div id="skillListProgramming" class="skillList">
+        <h3>Programming Languages</h3>
+        <h4>Web/Desktop</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">HTML5 / CSS3</div>
+          <div class="skillListItem">JavaScript</div>
+          <div class="skillListItem">ReactJS</div>
+          <div class="skillListItem">jQuery</div>
+          <div class="skillListItem">PL/SQL</div>
+          <div class="skillListItem">MySQL</div>
+          <div class="skillListItem">PHP</div>
+        </div>
 
-  <hr>
+        <h4>Mobile/App</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">Dart</div>
+          <div class="skillListItem">Flutter</div>
+          <div class="skillListItem">React Native</div>
+        </div>
 
-  <section id="projects">
-    <h3>Projects</h3>
-    <div id="projectCategories">
-      <div id="personalProjects" class="projectCategory">
+        <h4>Software</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">C++</div>
+          <div class="skillListItem">C#</div>
+          <div class="skillListItem">Java</div>
+        </div>
 
+        <h4>General</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">Git</div>
+          <div class="skillListItem">Powershell</div>
+        </div>
       </div>
-      <div id="odysProjects" class="projectCategory">
 
-      </div>
-      <div id="oppyProjects" class="projectCategory">
 
+      <div id="skillListSoftware" class="skillList">
+        <h3>Softwares/Tools</h3>
+        <h4>Management/Versioning</h4>
+          <div class="skillListCategory">
+          <div class="skillListItem">Perforce PV4</div>
+          <div class="skillListItem">GitHub</div>
+          <div class="skillListItem">JetBrains Space</div>
+          <div class="skillListItem">Trello</div>
+        </div>
+
+        <h4>Game Development Engines</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">Unreal Engine</div>
+          <div class="skillListItem">Unity</div>
+        </div>
+
+        <h4>Design</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">Photoshop</div>
+          <div class="skillListItem">Figma</div>
+          <div class="skillListItem">Adobe XD</div>
+        </div>
+
+        <h4>CMS</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">Wordpress</div>
+          <div class="skillListItem">WIX</div>
+        </div>
+
+        <h4>IDEs</h4>
+        <div class="skillListCategory">
+          <div class="skillListItem">IntelliJ IDEA</div>
+          <div class="skillListItem">Android Studio</div>
+        </div>
       </div>
     </div>
   </section>
 
   <hr>
 
+  <section id="projects">
+    <h3>Projects</h3>
+    <h4>Solo</h4>
+    <div class="projectCategories">
+      <div class="projectCategory">
+        <h4>Web/Desktop</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategoryItem">Portfolio</div>
+          <div class="projectCategoryItem">Star's Fiction Website</div>
+          <div class="projectCategoryItem"><i>Various unpublished projects</i></div>
+        </div>
+      </div>
+
+      <div class="projectCategory">
+        <h4>Mobile</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategoryItem">Splitter Clicker</div>
+          <div class="projectCategoryItem"><i>Various unpublished projects</i></div>
+        </div>
+      </div>
+
+      <div class="projectCategory">
+        <h4>Game Development</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategory">
+            <h4>Star's Fiction</h4>
+
+              <div class="projectCategoryItem">
+                [Blueprints]<br>
+                Player:
+                <ul>
+                  <li>Movement system (sprinting, stamina)</li>
+                  <li>Shooting system (raycasting, projectiles)</li>
+                  <li>Gun system (shooting, ammunition, reloading, overheating, aiming)</li>
+                  <li>Triggering and handling animations/sounds (shooting, overheating, aiming, wall-avoidance)</li>
+                </ul>
+                AI:
+                <ul>
+                  <li>Patrolling</li>
+                  <li>Chasing</li>
+                  <li>Damage system (taking/inflicting damage)</li>
+                </ul>
+              </div>
+
+              <br>
+
+              <div class="projectCategoryItem">
+                [Animations Blueprint]<br>
+                <li>Animations Blueprint for Player</li>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Group Projects</h4>
+    <div class="projectCategories">
+      <div class="projectCategory">
+        <h4>Odys</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategoryItem">Mobile Game</div>
+          <div class="projectCategoryItem">Mobile App</div>
+          <div class="projectCategoryItem">Mobile App</div>
+          <div class="projectCategoryItem">Website</div>
+          <div class="projectCategoryItem">Website</div>
+          <div class="projectCategoryItem">Website</div>
+          <div class="projectCategoryItem">Website</div>
+          <div class="projectCategoryItem">Website</div>
+          <div class="projectCategoryItem">Website</div>
+        </div>
+      </div>
+
+      <div class="projectCategory">
+        <h4>Oppy</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategoryItem">App</div>
+          <div class="projectCategoryItem">Website</div>
+        </div>
+      </div>
+
+      <div class="projectCategory">
+        <h4>Star's Fiction</h4>
+        <div class="projectCategoryDetails">
+          <div class="projectCategoryItem">Game</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
   <section id="contact">
     <h3>Contact</h3>
+    <div class="section-content" id="form-container">
+      <form action="https://formspree.io/f/" id="contactForm" method="POST">
+        <div class="form-field">
+          <div class="input-title">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path
+                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
+            </svg>
+            <label for="email">Email</label>
+          </div>
+          <input autocomplete="email" class="form-input" id="email" name="email" required type="email">
+        </div>
+
+        <div class="form-field">
+          <div class="input-title">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path
+                d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z"/>
+            </svg>
+            <label for="message">Message</label>
+          </div>
+          <textarea autocomplete="off" class="form-input" id="message" name="message" required type="text"></textarea>
+        </div>
+        <input name="_subject" type="hidden" value="Contact Form"/>
+        <div class="g-recaptcha" data-theme="dark" id="reCAPTCHA"></div>
+        <input class="btn" type="submit" value="Send">
+        <p id="contactFormStatus"></p>
+      </form>
+    </div>
   </section>
 
   <footer>
