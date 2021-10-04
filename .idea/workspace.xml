@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/bird/bird.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/bird/bird_old.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/bird/feathers.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/crosshair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/behaviour.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +97,7 @@
       <workItem from="1633281860246" duration="5275000" />
       <workItem from="1633369469542" duration="281000" />
       <workItem from="1633369808369" duration="3864000" />
-      <workItem from="1633373709771" duration="11956000" />
+      <workItem from="1633373709771" duration="12053000" />
     </task>
     <servers />
   </component>
