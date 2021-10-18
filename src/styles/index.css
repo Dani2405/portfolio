@@ -62,6 +62,8 @@ html, body {
   color: var(--primary-color);
   background: var(--secondary);
   font-family: Raleway;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 body {
@@ -197,6 +199,14 @@ header h2 {
   color: var(--secondary-color);
 }
 
+header #headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 header #headerAvatar {
   width: 300px;
   height: 300px;
@@ -204,7 +214,7 @@ header #headerAvatar {
   border: 7.5px solid var(--accent);
   background-color: #313b3d;
   background-image: url("../images/header/daniel.svg");
-  background-size: 3500px 350px;
+  background-size: 350px 350px;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
@@ -225,6 +235,7 @@ header #headerAvatar {
 #education {
   height: fit-content;
   margin-bottom: 100px;
+  font-size: 16px;
 }
 
 #educationList {
@@ -285,6 +296,7 @@ header #headerAvatar {
 #skills {
   height: fit-content;
   margin-bottom: 100px;
+  line-height: 28px;
 }
 #skillLists {
   display: flex;
@@ -314,28 +326,49 @@ header #headerAvatar {
 #projects {
   height: fit-content;
   margin-bottom: 100px;
+  line-height: 28px;
 }
 
 #projects h4 {
   font-size: 2em;
 }
 
-.projectCategories {
+#projects .projectList {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-
-.projectCategories .projectCategory h4 {
-  font-size: 1.25em !important;
-}
-
-.projectCategory {
-  margin-left: 25px;
-}
-
-.projectCategoryDetails {
-  margin-left: 25px;
+#projects .projectItem {
   padding: 15px;
-  border: 1px solid dimgray;
-  border-radius: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .projectItem:hover {
+  background-color: #121516;
+  cursor: pointer;
+}
+
+#projects .projectIcon {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: var(--primary);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 5px solid var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+}
+
+#projects #soloProjectList .projectIcon {
+  background-size: 175px 175px !important;
 }
 
 

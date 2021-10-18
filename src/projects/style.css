@@ -1,0 +1,34 @@
+.projectHeader {
+}
+
+.projectHeader h1 {
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-bottom: 0;
+}
+
+header #headerProjectLogo {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  border: 7.5px solid var(--accent);
+  background-repeat: no-repeat;
+}
+
+.projectCategories {
+}
+
+.projectCategories .projectCategory h4 {
+  font-size: 1.25em !important;
+}
+
+.projectCategory {
+  margin-left: 25px;
+}
+
+.projectCategoryDetails {
+  margin-left: 25px;
+  padding: 15px;
+  border: 1px solid dimgray;
+  border-radius: 5px;
+}

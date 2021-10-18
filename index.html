@@ -70,8 +70,10 @@
 
   <header id="home">
     <div>
-      <div id="headerAvatar"></div>
-      <h1>Daniel J. Fischer</h1>
+      <div id="headerContainer">
+        <div id="headerAvatar"></div>
+      </div>
+      <h1>Daniel Fischer</h1>
       <h2>Full Stack Developer</h2>
       <h3>🇨🇭 Bellinzona, Switzerland</h3>
 
@@ -125,7 +127,7 @@
     <div id="educationList">
 
       <div class="educationItem">
-        <div class="educationItemIcon">🏛</div>
+        <div class="educationItemIcon">🎓</div>
         <div class="educationItemDesc">
           <h2>Future <br> ETH Zürich</h2>
           <h4>Type: Polytechnic · Technical University</h4>
@@ -137,7 +139,7 @@
       <div id="educationConnectorFuture" class="educationConnector"></div>
 
       <div class="educationItem">
-        <div class="educationItemIcon">🎓</div>
+        <div class="educationItemIcon">🏛</div>
         <div class="educationItemDesc">
           <h2>2020-2022 - Current <br> Liceo Cantonale Bellinzona</h2>
           <h4>Type: High School</h4>
@@ -257,88 +259,42 @@
   <section id="projects">
     <h3>Projects</h3>
     <h4>Solo</h4>
-    <div class="projectCategories">
-      <div class="projectCategory">
-        <h4>Web/Desktop</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategoryItem">Portfolio</div>
-          <div class="projectCategoryItem">Star's Fiction Website</div>
-          <div class="projectCategoryItem"><i>Various unpublished projects</i></div>
+    <div id="soloProjectList" class="projectList">
+      <a href="./src/projects/solo/web/index.html">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(./src/projects/solo/web/icon.png);"></div>
+          <h1>Web & Desktop</h1>
         </div>
-      </div>
+      </a>
 
-      <div class="projectCategory">
-        <h4>Mobile</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategoryItem">Splitter Clicker</div>
-          <div class="projectCategoryItem"><i>Various unpublished projects</i></div>
+      <a href="./src/projects/solo/mobile/index.html">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(./src/projects/solo/mobile/icon.png);"></div>
+          <h1>Mobile Apps</h1>
         </div>
-      </div>
+      </a>
 
-      <div class="projectCategory">
-        <h4>Game Development</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategory">
-            <h4>Star's Fiction</h4>
-
-              <div class="projectCategoryItem">
-                [Blueprints]<br>
-                Player:
-                <ul>
-                  <li>Movement system (sprinting, stamina)</li>
-                  <li>Shooting system (raycasting, projectiles)</li>
-                  <li>Gun system (shooting, ammunition, reloading, overheating, aiming)</li>
-                  <li>Triggering and handling animations/sounds (shooting, overheating, aiming, wall-avoidance)</li>
-                </ul>
-                AI:
-                <ul>
-                  <li>Patrolling</li>
-                  <li>Chasing</li>
-                  <li>Damage system (taking/inflicting damage)</li>
-                </ul>
-              </div>
-
-              <br>
-
-              <div class="projectCategoryItem">
-                [Animations Blueprint]<br>
-                <li>Animations Blueprint for Player</li>
-              </div>
-          </div>
+      <a href="./src/projects/solo/game-development/index.html">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(./src/projects/solo/game-development/icon.png);"></div>
+          <h1>Game Development</h1>
         </div>
-      </div>
+      </a>
     </div>
 
     <h4>Group Projects</h4>
-    <div class="projectCategories">
-      <div class="projectCategory">
-        <h4>Odys</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategoryItem">Mobile Game</div>
-          <div class="projectCategoryItem">Mobile App</div>
-          <div class="projectCategoryItem">Mobile App</div>
-          <div class="projectCategoryItem">Website</div>
-          <div class="projectCategoryItem">Website</div>
-          <div class="projectCategoryItem">Website</div>
-          <div class="projectCategoryItem">Website</div>
-          <div class="projectCategoryItem">Website</div>
-          <div class="projectCategoryItem">Website</div>
-        </div>
+    <div id="groupProjectList" class="projectList">
+      <div class="projectItem">
+        <div class="projectIcon" style="background-image: url(./src/projects/group-projects/odys/logo.png);"></div>
+        <h1>Odys</h1>
       </div>
-
-      <div class="projectCategory">
-        <h4>Oppy</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategoryItem">App</div>
-          <div class="projectCategoryItem">Website</div>
-        </div>
+      <div class="projectItem">
+        <div class="projectIcon" style="background-image: url(./src/projects/group-projects/oppy/logo.png);"></div>
+        <h1>Oppy</h1>
       </div>
-
-      <div class="projectCategory">
-        <h4>Star's Fiction</h4>
-        <div class="projectCategoryDetails">
-          <div class="projectCategoryItem">Game</div>
-        </div>
+      <div class="projectItem">
+        <div class="projectIcon" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3e156b77849959.5c938e3707897.png); background-size: cover;"></div>
+        <h1>Star's Fiction</h1>
       </div>
     </div>
   </section>
