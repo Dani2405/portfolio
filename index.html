@@ -33,7 +33,14 @@
   <!-- CSS -->
   <link href="./src/styles/index.css" rel="stylesheet">
   <!-- JavaScript -->
-  <script src="./src/scripts/main.js"></script>
+  <!-- Load the JavaScript API for reCAPTCHA v2  -->
+  <script type="text/javascript">
+    var onloadCallback = function () {
+      grecaptcha.render('reCAPTCHA', {
+        sitekey: "6LcD_BAdAAAAANCA2_cSK3gPC-7LPCDlyohFi4Fq",
+      });
+    };
+  </script>
 </head>
 <body>
   <nav id="menu" style="--animate-duration: 1s;">
@@ -54,12 +61,12 @@
         <li>Education/Work</li>
       </a>
 
-      <a href="#skills" class="navLink">
-        <li>Skills</li>
-      </a>
-
       <a href="#projects" class="navLink">
         <li>Projects</li>
+      </a>
+
+      <a href="#skills" class="navLink">
+        <li>Skills</li>
       </a>
 
       <a href="#contact" class="navLink">
@@ -75,39 +82,46 @@
       </div>
       <h1>Daniel Fischer</h1>
       <h2>Full Stack Developer</h2>
-      <h3>🇨🇭 Bellinzona, Switzerland</h3>
+      <h3>🇨🇭 Ticino, Switzerland</h3>
 
       <div id="headerLinks" class="links">
         <!-- GitHub -->
-        <a href="https://github.com/Dani2405">
+        <a href="https://github.com/Dani2405" target="_blank">
           <svg viewBox="0 0 24 24">
             <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
           </svg>
         </a>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/daniel-fischer-523454137">
-          <svg viewBox="0 0 24 24">
-            <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
-          </svg>
-        </a>
-
         <!-- Instagram -->
-        <a href="https://www.instagram.com/dani2405_">
+        <a href="https://www.instagram.com/dani2405_dev" target="_blank">
           <svg viewBox="0 0 24 24">
             <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
           </svg>
         </a>
 
         <!-- Twitter -->
-        <a href="https://twitter.com/Dani2405_">
+        <a href="https://twitter.com/Dani2405_" target="_blank">
           <svg viewBox="0 0 24 24">
             <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
           </svg>
         </a>
 
+        <!-- ArtStation -->
+        <a href="https://www.artstation.com/dani2405" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M1.77,16.88L3.5,19.86C3.84,20.54 4.54,21 5.33,21H16.79L14.43,16.88H1.77M22.23,16.9C22.23,16.5 22.11,16.11 21.9,15.78L15.17,4.1C14.82,3.44 14.15,3 13.35,3H9.8L20.18,21L21.82,18.14C22.13,17.6 22.23,17.36 22.23,16.9M12.73,13.94L8.1,5.92L3.45,13.94H12.73Z" />
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/daniel-fischer-523454137" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+          </svg>
+        </a>
+
         <!-- E-mail -->
-        <a href="mailto:me@fischerdani.com">
+        <a href="mailto:me@fischerdani.com" target="_blank">
           <svg viewBox="0 0 24 24">
             <path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
           </svg>
@@ -118,12 +132,63 @@
 
   <section id="about">
     <h3>About me</h3>
+    <div id="infoContainer">
+      <div class="infoList">
+        <div class="infoItem">
+          <h2>🔎 Who am I?</h2>
+          <p>Daniel Fischer, a student from Switzerland, currently studying to become a Software Engineer in the future. Message me privately for a detailed Resume and more information</p>
+        </div>
+      </div>
+      <div class="infoList">
+        <div class="infoItem">
+          <h2> Birthday:</h2>
+          <p>📅 24.05.1995</p>
+        </div>
+        <div class="infoItem">
+          <h2>Email:</h2>
+          <p>✉ <a href="mailto:me@fischerdani.com">me@fischerdani.com</a></p>
+        </div>
+      </div>
+      <div class="infoList">
+        <div class="infoItem">
+          <h2>Country:</h2>
+          <p>🇨🇭 Switzerland (C Permit)</p>
+        </div>
+        <div class="infoItem">
+          <h2>Nationality:</h2>
+          <p>🇪🇺 Italian/German</p>
+        </div>
+      </div>
+      <div class="infoList">
+        <div class="infoItem">
+          <h2>Hobbies/Interests:</h2>
+          <div id="hobbies">
+            <div class="hobby hobbyWork">⌨ Coding</div>
+            <div class="hobby hobbyWork">📝 Learning</div>
+            <div class="hobby hobbyWork">👾 Game Development</div>
+            <div class="hobby hobbyFreetime">🕹 Video games</div>
+            <div class="hobby hobbyFreetime">🎹 Producing music</div>
+            <div class="hobby hobbyLike">🎧 Music</div>
+            <div class="hobby hobbyWork">🎨 Design</div>
+            <div class="hobby hobbyWork">🖥 Web Development</div>
+            <div class="hobby hobbyCulture">✈ Travelling</div>
+            <div class="hobby hobbyLike">🐶 Animals</div>
+            <div class="hobby hobbyCulture">🎥 Watching movies</div>
+            <div class="hobby hobbyLike">🍕 Pizza</div>
+            <div class="hobby hobbyOther">🪐 Space</div>
+            <div class="hobby hobbyOther">✨ Creativity</div>
+            <div class="hobby hobbyOther">🧬 Science</div>
+            <div class="hobby hobbyOther">🛰 Technology</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <hr>
 
   <section id="education">
-    <h3>Education/Work</h3>
+    <h3>Education / Work</h3>
     <div id="educationList">
 
       <div class="educationItem">
@@ -178,105 +243,27 @@
 
   <hr>
 
-  <section id="skills">
-    <h3>Skills</h3>
-    <div id="skillLists">
-      <div id="skillListProgramming" class="skillList">
-        <h3>Programming Languages</h3>
-        <h4>Web/Desktop</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">HTML5 / CSS3</div>
-          <div class="skillListItem">JavaScript</div>
-          <div class="skillListItem">ReactJS</div>
-          <div class="skillListItem">jQuery</div>
-          <div class="skillListItem">PL/SQL</div>
-          <div class="skillListItem">MySQL</div>
-          <div class="skillListItem">PHP</div>
-        </div>
-
-        <h4>Mobile/App</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">Dart</div>
-          <div class="skillListItem">Flutter</div>
-          <div class="skillListItem">React Native</div>
-        </div>
-
-        <h4>Software</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">C++</div>
-          <div class="skillListItem">C#</div>
-          <div class="skillListItem">Java</div>
-        </div>
-
-        <h4>General</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">Git</div>
-          <div class="skillListItem">Powershell</div>
-        </div>
-      </div>
-
-
-      <div id="skillListSoftware" class="skillList">
-        <h3>Softwares/Tools</h3>
-        <h4>Management/Versioning</h4>
-          <div class="skillListCategory">
-          <div class="skillListItem">Perforce PV4</div>
-          <div class="skillListItem">GitHub</div>
-          <div class="skillListItem">JetBrains Space</div>
-          <div class="skillListItem">Trello</div>
-        </div>
-
-        <h4>Game Development Engines</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">Unreal Engine</div>
-          <div class="skillListItem">Unity</div>
-        </div>
-
-        <h4>Design</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">Photoshop</div>
-          <div class="skillListItem">Figma</div>
-          <div class="skillListItem">Adobe XD</div>
-        </div>
-
-        <h4>CMS</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">Wordpress</div>
-          <div class="skillListItem">WIX</div>
-        </div>
-
-        <h4>IDEs</h4>
-        <div class="skillListCategory">
-          <div class="skillListItem">IntelliJ IDEA</div>
-          <div class="skillListItem">Android Studio</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr>
-
   <section id="projects">
     <h3>Projects</h3>
-    <h4>Solo</h4>
+    <h4>Solo Projects</h4>
     <div id="soloProjectList" class="projectList">
-      <a href="./src/projects/solo/web/index.html">
+      <a href="projects/solo/web/index.html" target="_blank">
         <div class="projectItem">
-          <div class="projectIcon" style="background-image: url(./src/projects/solo/web/icon.png);"></div>
+          <div class="projectIcon" style="background-image: url(projects/solo/web/icon.png);"></div>
           <h1>Web & Desktop</h1>
         </div>
       </a>
 
-      <a href="./src/projects/solo/mobile/index.html">
+      <a href="projects/solo/mobile/index.html" target="_blank">
         <div class="projectItem">
-          <div class="projectIcon" style="background-image: url(./src/projects/solo/mobile/icon.png);"></div>
+          <div class="projectIcon" style="background-image: url(projects/solo/mobile/icon.png);"></div>
           <h1>Mobile Apps</h1>
         </div>
       </a>
 
-      <a href="./src/projects/solo/game-development/index.html">
+      <a href="projects/solo/game-development/index.html" target="_blank">
         <div class="projectItem">
-          <div class="projectIcon" style="background-image: url(./src/projects/solo/game-development/icon.png);"></div>
+          <div class="projectIcon" style="background-image: url(projects/solo/game-development/icon.png);"></div>
           <h1>Game Development</h1>
         </div>
       </a>
@@ -284,97 +271,257 @@
 
     <h4>Group Projects</h4>
     <div id="groupProjectList" class="projectList">
-      <div class="projectItem">
-        <div class="projectIcon" style="background-image: url(./src/projects/group-projects/odys/logo.png);"></div>
-        <h1>Odys</h1>
-      </div>
-      <div class="projectItem">
-        <div class="projectIcon" style="background-image: url(./src/projects/group-projects/oppy/logo.png);"></div>
-        <h1>Oppy</h1>
-      </div>
-      <div class="projectItem">
-        <div class="projectIcon" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3e156b77849959.5c938e3707897.png); background-size: cover;"></div>
-        <h1>Star's Fiction</h1>
-      </div>
+      <a href="projects/group-projects/odys/index.html" target="_blank">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(projects/group-projects/odys/logo.png);"></div>
+          <h1>Odys</h1>
+        </div>
+      </a>
+
+      <a href="projects/group-projects/oppy/index.html" target="_blank">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(projects/group-projects/oppy/logo.png);"></div>
+          <h1>Oppy</h1>
+        </div>
+      </a>
+
+      <a href="projects/group-projects/stars-fiction/index.html" target="_blank">
+        <div class="projectItem">
+          <div class="projectIcon" style="background-image: url(projects/group-projects/stars-fiction/logo.png);"></div>
+          <h1>Star's Fiction</h1>
+        </div>
+      </a>
     </div>
   </section>
+
+  <hr>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <div id="skillLists">
+      <h3 class="skillSectionTitle">Languages</h3>
+      <div id="skillListLanguages" class="skillList">
+        <div class="skillListItem">
+          <h4>🇮🇹 Italian</h4>
+          <div class="percBg">
+            <div class="percBar" style="width: 100%"><div>Native</div></div>
+          </div>
+        </div>
+
+        <div class="skillListItem">
+          <h4>🇺🇸 English (US)</h4>
+          <div class="percBg">
+            <div class="percBar" style="width: 100%"><div>C2</div></div>
+          </div>
+        </div>
+
+        <div class="skillListItem">
+          <h4>🇩🇪 German</h4>
+          <div class="percBg">
+            <div class="percBar" style="width: 100%"><div>Native (C2)</div></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="skillSectionTitle">Programming Languages</h3>
+      <div id="skillListProgramming" class="skillList">
+        <div class="skillListCategory">
+          <h4>Web/Desktop</h4>
+          <div class="skillListItem">
+            HTML5 / CSS3
+            <div class="percBg">
+              <div class="percBar" style="width: 100%"><div>100%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            JavaScript
+            <div class="percBg">
+              <div class="percBar" style="width: 75%"><div>75%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            ReactJS
+            <div class="percBg">
+              <div class="percBar" style="width: 15%"><div>15%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            jQuery
+            <div class="percBg">
+              <div class="percBar" style="width: 75%"><div>75%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            PL/SQL
+            <div class="percBg">
+              <div class="percBar" style="width: 75%"><div>75%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            MySQL
+            <div class="percBg">
+              <div class="percBar" style="width: 50%"><div>50%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            PHP
+            <div class="percBg">
+              <div class="percBar" style="width: 65%"><div>65%</div></div>
+            </div>
+          </div>
+
+          <div class="skillListItem">
+            Python
+            <div class="percBg">
+              <div class="percBar" style="width: 30%"><div>30%</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="skillListContainer">
+          <div class="skillListCategory">
+            <h4>Mobile/App</h4>
+            <div class="skillListItem">
+              Dart
+              <div class="percBg">
+                <div class="percBar" style="width: 75%"><div>75%</div></div>
+              </div>
+            </div>
+
+            <div class="skillListItem">
+              Flutter
+              <div class="percBg">
+                <div class="percBar" style="width: 85%"><div>85%</div></div>
+              </div>
+            </div>
+
+            <div class="skillListItem">
+              React Native
+              <div class="percBg">
+                <div class="percBar" style="width: 25%"><div>25%</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skillListCategory">
+            <h4>Software</h4>
+            <div class="skillListItem">
+              C++
+              <div class="percBg">
+                <div class="percBar" style="width: 25%"><div>25%</div></div>
+              </div>
+            </div>
+            <div class="skillListItem">
+              C#
+              <div class="percBg">
+                <div class="percBar" style="width: 45%"><div>45%</div></div>
+              </div>
+            </div>
+            <div class="skillListItem">
+              Java
+              <div class="percBg">
+                <div class="percBar" style="width: 70%"><div>70%</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="readMore"><hr> <a href="./skills/index.html" target="_blank">VIEW MORE</a> <hr></div>
+    </div>
+  </section>
+
   <hr>
 
   <section id="contact">
     <h3>Contact</h3>
     <div class="section-content" id="form-container">
-      <form action="https://formspree.io/f/" id="contactForm" method="POST">
+      <form action="https://formspree.io/f/xqkwvbkd" id="contactForm" method="POST">
         <div class="form-field">
           <div class="input-title">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path
-                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
-            </svg>
-            <label for="email">Email</label>
+            <label for="email">✉ Email</label>
           </div>
           <input autocomplete="email" class="form-input" id="email" name="email" required type="email">
         </div>
 
         <div class="form-field">
           <div class="input-title">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path
-                d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z"/>
-            </svg>
-            <label for="message">Message</label>
+            <label for="message">🗨 Message</label>
           </div>
           <textarea autocomplete="off" class="form-input" id="message" name="message" required type="text"></textarea>
         </div>
         <input name="_subject" type="hidden" value="Contact Form"/>
-        <div class="g-recaptcha" data-theme="dark" id="reCAPTCHA"></div>
-        <input class="btn" type="submit" value="Send">
+        <div id="sendButton">
+          <div class="g-recaptcha" data-theme="dark" id="reCAPTCHA"></div>
+          <input class="btn" type="submit" value="Send">
+        </div>
         <p id="contactFormStatus"></p>
       </form>
     </div>
   </section>
 
   <footer>
-    <div id="footerCopyright">
-      <span id="signature">Daniel - Fischer</span><br>
-      <span class="material-icons">copyright</span> 2021 Daniel Fischer
+    <div id="topFooter" class="footerRow">
+      <span id="signature">Daniel Fischer</span>
+
+      <div class="links">
+        <!-- GitHub -->
+        <a href="https://github.com/Dani2405" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/dani2405_dev" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+          </svg>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/Dani2405_" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg>
+        </a>
+
+        <!-- ArtStation -->
+        <a href="https://www.artstation.com/dani2405" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M1.77,16.88L3.5,19.86C3.84,20.54 4.54,21 5.33,21H16.79L14.43,16.88H1.77M22.23,16.9C22.23,16.5 22.11,16.11 21.9,15.78L15.17,4.1C14.82,3.44 14.15,3 13.35,3H9.8L20.18,21L21.82,18.14C22.13,17.6 22.23,17.36 22.23,16.9M12.73,13.94L8.1,5.92L3.45,13.94H12.73Z" />
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/daniel-fischer-523454137" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+          </svg>
+        </a>
+
+        <!-- E-mail -->
+        <a href="mailto:me@fischerdani.com" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
+          </svg>
+        </a>
+      </div>
     </div>
-
-    <div class="links">
-      <!-- GitHub -->
-      <a href="https://github.com/Dani2405">
-        <svg viewBox="0 0 24 24">
-          <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-        </svg>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/daniel-fischer-523454137">
-        <svg viewBox="0 0 24 24">
-          <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
-        </svg>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/dani2405_">
-        <svg viewBox="0 0 24 24">
-          <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-        </svg>
-      </a>
-
-      <!-- Twitter -->
-      <a href="https://twitter.com/Dani2405_">
-        <svg viewBox="0 0 24 24">
-          <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
-        </svg>
-      </a>
-
-      <!-- E-mail -->
-      <a href="mailto:me@fischerdani.com">
-        <svg viewBox="0 0 24 24">
-          <path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
-        </svg>
-      </a>
+    <div id="bottomFooter" class="footerRow">
+      <span id="footerCopyright"><span class="material-icons">copyright</span> 2021 Daniel Fischer</span>
+      <span id="footerCredits">Designed and developed by Daniel Fischer</span>
     </div>
   </footer>
 </body>
+<!-- JavaScript -->
+<script src="./src/scripts/main.js"></script>
+<!-- reCaptcha v2 -->
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </html>

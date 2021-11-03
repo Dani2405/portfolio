@@ -31,17 +31,16 @@
   <!-- Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
   <!-- CSS -->
-  <link href="../../../styles/index.css" rel="stylesheet">
-  <link href="../../style.css" rel="stylesheet">
+  <link href="../../../src/styles/index.css" rel="stylesheet">
+  <link href="../../../src/styles/projects.css" rel="stylesheet">
   <style>
     #headerProjectLogo {
-      background-image: url("./icon.png");
-      background-size: 200px 200px;
+      background-image: url("logo.png");
+      background-size: cover;
       background-position: center center;
+      background-repeat: no-repeat;
     }
   </style>
-  <!-- JavaScript -->
-  <script src="../../../scripts/main.js"></script>
 </head>
 <body>
 <nav id="menu" style="--animate-duration: 1s;">
@@ -50,27 +49,27 @@
   </a>
 
   <div id="navLinks">
-    <a href="../../../../index.html#home" class="navLink">
+    <a href="../../../index.html#home" class="navLink">
       <li>Home</li>
     </a>
 
-    <a href="../../../../index.html#about" class="navLink">
+    <a href="../../../index.html#about" class="navLink">
       <li>About me</li>
     </a>
 
-    <a href="../../../../index.html#education" class="navLink">
+    <a href="../../../index.html#education" class="navLink">
       <li>Education/Work</li>
     </a>
 
-    <a href="../../../../index.html#skills" class="navLink">
+    <a href="../../../index.html#skills" class="navLink">
       <li>Skills</li>
     </a>
 
-    <a href="../../../../index.html#projects" class="navLink">
+    <a href="../../../index.html#projects" class="navLink">
       <li>Projects</li>
     </a>
 
-    <a href="../../../../index.html#contact" class="navLink">
+    <a href="../../../index.html#contact" class="navLink">
       <li>Contact</li>
     </a>
   </div>
@@ -80,21 +79,28 @@
     <div id="headerContainer">
       <div id="headerProjectLogo"></div>
     </div>
-    <h1>Mobile Apps</h1>
-    <h2>Solo Projects</h2>
+    <h1>Oppy</h1>
+    <h2>Group Projects</h2>
   </div>
 </header>
 
 <section>
   <h3>Details</h3>
   <div class="projectCategory">
-    <h4>Mobile</h4>
+    <h4>App</h4>
     <div class="projectCategoryDetails">
-      <div class="projectCategoryItem">Splitter Clicker</div>
-      <div class="projectCategoryItem"><i>Various unpublished projects</i></div>
+      <div class="projectCategoryItem">App</div>
+    </div>
+  </div>
+  <div class="projectCategory">
+    <h4>Website</h4>
+    <div class="projectCategoryDetails">
+      <div class="projectCategoryItem">Website</div>
     </div>
   </div>
 </section>
 
 </body>
+<!-- JavaScript -->
+<script src="../../../src/scripts/main.js"></script>
 </html>

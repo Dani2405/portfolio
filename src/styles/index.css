@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   margin: 0;
   color: var(--primary-color);
-  background: var(--secondary);
+  background: linear-gradient(30deg, var(--secondary) 0%, var(--accent) 100%);
   font-family: Raleway;
   font-size: 18px;
   letter-spacing: 1px;
@@ -72,7 +72,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: transparent;
+  background-color: var(--secondary);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -94,12 +94,11 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 a svg:hover, nav li:hover {
   color: var(--link-color-hover);
-  cursor: pointer;
 }
 
 img {
@@ -129,6 +128,7 @@ section h3 {
   text-align: right;
   letter-spacing: 15px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*
@@ -175,7 +175,6 @@ nav {
 #menuIcon {
   display: none;
   margin-right: 50px;
-  cursor: pointer;
 }
 
 .material-icons-round {
@@ -188,6 +187,7 @@ nav {
 
 header {
   background: var(--primary);
+  background: linear-gradient(45deg, var(--secondary) 25%, var(--accent) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,6 +230,134 @@ header #headerAvatar {
 }
 
 /*
+ *  About           ----------------------------------------------------------------------------------------------------
+ */
+#about {
+  height: auto;
+}
+
+#infoContainer {
+  width: 75%;
+  margin: auto;
+}
+
+.infoList {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+
+.infoList div {
+
+}
+
+.infoList h2, .infoList p {
+  margin: 0;
+}
+
+.infoList h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.infoList p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.infoList a {
+  color: white;
+}
+
+.infoList a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+.infoItem {
+  padding: 15px;
+  min-width: 50%;
+}
+
+#hobbies {
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.hobby {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid rgba(104, 225, 167, 1);
+  background: rgba(104, 225, 167, .5);
+  color: white;
+  cursor: default;
+}
+
+.hobby:hover {
+  background: rgba(104, 225, 167, .75);
+}
+
+.hobbyWork {
+  border: 2px solid rgba(104, 225, 167, 1);
+  background: rgba(104, 225, 167, .5);
+}
+
+.hobbyWork:hover {
+  background: rgba(104, 225, 167, .75);
+}
+
+.hobbyFreetime {
+  border: 2px solid rgba(67, 124, 224, 1);
+  background: rgba(67, 124, 224, .5);
+}
+
+.hobbyFreetime:hover {
+  background: rgba(67, 124, 224, .75);
+}
+
+.hobbyCulture {
+  border: 2px solid rgba(229, 159, 48, 1);
+  background: rgba(229, 159, 48, .5);
+}
+
+.hobbyCulture:hover {
+  background: rgba(229, 159, 48, .75);
+}
+
+.hobbyOther {
+  border: 2px solid rgba(163, 48, 229, 1);
+  background: rgba(163, 48, 229, .5);
+}
+
+.hobbyOther:hover {
+  background: rgba(163, 48, 229, .75);
+}
+
+.hobbyLike {
+  border: 2px solid rgba(221, 68, 68, 1);
+  background: rgba(221, 68, 68, .5);
+}
+
+.hobbyLike:hover {
+  background: rgba(221, 68, 68, .75);
+}
+
+.hobby img.emoji {
+  height: 18px;
+  margin-bottom: -2.5px;
+}
+
+/*
  *  Education/Work  ----------------------------------------------------------------------------------------------------
  */
 #education {
@@ -247,6 +375,10 @@ header #headerAvatar {
 
 .educationItem {
   display: flex;
+}
+
+.educationItem:first-child {
+  border-bottom-style: dashed;
 }
 
 .educationItemIcon {
@@ -291,36 +423,6 @@ header #headerAvatar {
 }
 
 /*
- *  Skills          ----------------------------------------------------------------------------------------------------
- */
-#skills {
-  height: fit-content;
-  margin-bottom: 100px;
-  line-height: 28px;
-}
-#skillLists {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.skillList h3 {
-  font-size: 2.5em;
-  letter-spacing: normal;
-  text-align: left;
-}
-
-.skillList h4 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  margin-left: 25px;
-}
-
-.skillListCategory {
-  margin-left: 30px;
-}
-
-
-/*
  *  Projects        ----------------------------------------------------------------------------------------------------
  */
 #projects {
@@ -348,8 +450,7 @@ header #headerAvatar {
 }
 
 #projects .projectItem:hover {
-  background-color: #121516;
-  cursor: pointer;
+  background-color: #0F1011;
 }
 
 #projects .projectIcon {
@@ -367,40 +468,261 @@ header #headerAvatar {
   font-size: 75px;
 }
 
+#projects #soloProjectList .projectItem {
+}
+
 #projects #soloProjectList .projectIcon {
-  background-size: 175px 175px !important;
+  background-size: 175px 175px, 250px 250px;
+}
+
+/*
+ *  Skills          ----------------------------------------------------------------------------------------------------
+ */
+#skills {
+  height: fit-content;
+  margin-bottom: 100px;
+  line-height: 28px;
+}
+
+#skillLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skillSectionTitle {
+  font-size: 2.5em;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.skillSectionTitle:first-child {
+  margin-top: 0;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skillListItem {
+  margin-bottom: 25px;
+}
+
+.skillListItem svg {
+  width: 100px;
+}
+
+.skillListItem svg text {
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.skillList h4 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.skillListCategory {
+  background-color: var(--primary);
+  padding: 25px;
+  border: 5px solid var(--accent);
+  border-radius: 15px;
+  width: 45%;
+}
+
+#skillListContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  min-height: 400px;
+  padding: 0 32px;
+}
+
+#skillListContainer .skillListCategory {
+  width: 100%;
+}
+#skillListContainer .skillListCategory:nth-child(2) {
+  margin-top: 25px;
+}
+
+#skillListLanguages .skillListItem {
+  width: 25%;
+}
+
+#skillListLanguages img.emoji{
+  margin-bottom: -15px;
+}
+
+.percBg {
+  width: 100%;
+  height: 10px;
+  background: #dadada;
+  border-radius: 10px;
+}
+
+.percBar {
+  padding: 5px 0;
+  border-radius: 10px;
+  background: #41c988;
+  background: linear-gradient(45deg, #5DBEFF -25%, #72FF5D 100%);
+  width: 0;
+  text-align: right;
+}
+
+.percBar div {
+  font-size: 15px;
+  color: white;
+  margin-bottom: -50px;
+}
+
+#readMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#readMore hr {
+  width: 35%;
+}
+
+#readMore a {
+  font-size: 24px;
+  padding: 15px 25px;
+  color: white;
+  background: var(--accent);
+}
+
+#readMore a:hover {
+  background: var(--primary);;
 }
 
 
 /*
  *  Contact         ----------------------------------------------------------------------------------------------------
  */
+#contact {
+}
 
+#contact #form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact form {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+
+#contact .input-title {
+  margin: 30px 0 15px 0px;
+}
+
+#contact .form-input {
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--primary-color);
+  font-size: 18px;
+  letter-spacing: .75px;
+  border: 0;
+  outline: none;
+  padding: 1rem;
+}
+
+#contact #message {
+  height: 250px;
+  resize: none;
+  line-height: 24px;
+  padding: 1rem;
+ }
+
+#sendButton {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 1rem;
+}
+
+#contact .btn {
+  width: 125px;
+  color: var(--primary);
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: 2px solid var(--secondary-color);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#contact .btn:hover {
+  background-color: var(--primary);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+#contactFormStatus {
+  margin-top: 50px;
+}
 
 /*
  * Footer           ----------------------------------------------------------------------------------------------------
 */
 footer {
-  height: 25vh;
+  padding: 50px 5%;
   background: var(--accent);
+  color: white;
   display: flex;
-  justify-content: space-around;
+  flex-flow: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   align-self: center;
-  text-align: left;
-  color: white;
+}
+
+.footerRow {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bottomFooter {
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+#footerCredits {
+  font-size: 12px;
 }
 
 #signature {
   font-family: TheScientist;
-  font-size: 48px;
+  font-size: 36px;
   margin: 0;
   padding: 0;
+  margin-left: 25px;
+  color: white;
 }
 
 footer .links {
   margin-top: 0;
+  align-items: center;
 }
 
 footer .links svg {
@@ -448,6 +770,35 @@ footer .links svg:hover {
   #menuIcon {
     display: inline;
   }
+
+  #skills .skillSectionTitle {
+    line-height: 50px;
+    text-align: center;
+  }
+
+  #skillListLanguages {
+    flex-flow: column;
+  }
+
+  #skillListLanguages .skillListItem {
+    width: 100%;
+  }
+
+  #skillListProgramming .skillListCategory {
+    width: 100%;
+  }
+
+  #skillListProgramming #skillListContainer {
+    width: 100%;
+  }
+
+  #skillListProgramming #skillListContainer .skillListCategory {
+    margin-top: 25px;
+  }
+
+  #contact form {
+    width: 80%;
+  }
 }
 
 /*-------------------*/
@@ -459,7 +810,9 @@ footer .links svg:hover {
 
 /*-------------------*/
 @media only screen and (max-width: 950px) and (orientation: portrait) {
-
+  .projectList {
+    flex-flow: column;
+  }
 }
 
 /*-------------------*/
@@ -469,18 +822,52 @@ footer .links svg:hover {
     text-align: center;
   }
 
-  footer {
-    padding: 25px 0;
-    flex-direction: column;
+  #infoContainer {
+    width: 100%;
+  }
+
+  .infoList {
+    flex-flow: column;
+  }
+
+  #hobbies {
+    width: 100%;
+  }
+
+  #readMore hr {
+    width: 20%;
+  }
+
+  #contact form {
+     width: 70%;
+   }
+
+  #sendButton {
     justify-content: space-between;
+    flex-flow: column;
+    height: 150px;
   }
 
-  footer #footerCopyright {
-    text-align: center;
+  #sendButton input, #sendButton div {
+    align-self: center;
   }
 
-  footer .links svg {
-    width: 35px;
+  footer {
+    height: 25vh;
+    justify-content: space-evenly;
+  }
+
+  .footerRow {
+    flex-flow: column;
+    justify-content: space-evenly;
+  }
+
+  .links {
+    height: 100px;
+  }
+
+  #footerCopyright {
+    margin: 10px 0;
   }
 }
 
