@@ -15,20 +15,64 @@ header #headerProjectLogo {
   background-repeat: no-repeat;
 }
 
+#project {
+  height: auto;
+}
+
+#project a {
+  color: white;
+}
+
+#project a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
 .projectCategories {
 }
 
-.projectCategories .projectCategory h4 {
-  font-size: 1.25em !important;
+.projectCategory {
+  width: 60%;
+  margin: auto;
 }
 
-.projectCategory {
-  margin-left: 25px;
+.projectCategory h4 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.projectCategory .projectItem h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.projectCategory img {
+  width: 100%;
+}
+
+.projectList {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.projectItem {
+  margin-bottom: 25px;
 }
 
 .projectCategoryDetails {
-  margin-left: 25px;
   padding: 15px;
   border: 1px solid dimgray;
   border-radius: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------
+ * Mobile
+----------------------------------------------------------------------------------------------------*/
+
+/*-------------------*/
+@media only screen and (max-width: 950px) {
+  .projectHeader h1 {
+    font-size: 2em;
+  }
 }

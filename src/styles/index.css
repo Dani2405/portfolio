@@ -809,13 +809,6 @@ footer .links svg:hover {
 }
 
 /*-------------------*/
-@media only screen and (max-width: 950px) and (orientation: portrait) {
-  .projectList {
-    flex-flow: column;
-  }
-}
-
-/*-------------------*/
 @media only screen and (max-width: 950px) {
   section h3 {
     font-size: 2.5em;
@@ -832,6 +825,10 @@ footer .links svg:hover {
 
   #hobbies {
     width: 100%;
+  }
+
+  .projectList {
+    flex-flow: column;
   }
 
   #readMore hr {
