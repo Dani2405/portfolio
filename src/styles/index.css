@@ -558,6 +558,10 @@ header #headerAvatar {
   margin-bottom: -15px;
 }
 
+#skillListLanguages .percBar {
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+}
+
 .percBg {
   width: 100%;
   height: 10px;
