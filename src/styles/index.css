@@ -377,10 +377,6 @@ header #headerAvatar {
   display: flex;
 }
 
-.educationItem:first-child {
-  border-bottom-style: dashed;
-}
-
 .educationItemIcon {
   color: var(--secondary-color);
   padding: 50px;
@@ -887,6 +883,10 @@ footer .links svg:hover {
   .educationItem {
     flex-direction: column;
     border-bottom: 1px solid var(--secondary-color);
+  }
+
+  .educationItem:first-child {
+    border-bottom-style: dashed;
   }
 
   .educationItemIcon {
