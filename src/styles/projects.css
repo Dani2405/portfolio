@@ -89,4 +89,13 @@ section {
   .projectHeader h1 {
     font-size: 2em;
   }
+
+  .projectPreviews {
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .projectPreviews img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }

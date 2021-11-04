@@ -610,6 +610,7 @@ header #headerAvatar {
  *  Contact         ----------------------------------------------------------------------------------------------------
  */
 #contact {
+  height: auto;
 }
 
 #contact #form-container {
@@ -859,8 +860,15 @@ footer .links svg:hover {
     justify-content: space-evenly;
   }
 
-  .links {
+  footer .links {
     height: 100px;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  footer .links svg {
+    width: 50px;
   }
 
   #footerCopyright {
