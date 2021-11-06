@@ -471,6 +471,11 @@ header #headerAvatar {
   background-size: 175px 175px, 250px 250px;
 }
 
+#projects .disabled {
+  opacity: .35;
+  pointer-events: none;
+}
+
 /*
  *  Skills          ----------------------------------------------------------------------------------------------------
  */

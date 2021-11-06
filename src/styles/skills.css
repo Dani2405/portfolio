@@ -1,0 +1,17 @@
+.skillList {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillListCategory {
+  width: 100%;
+  margin: 25px 0;
+}
+
+#skillListLanguages .skillListItem {
+  width: 100%;
+}
+
+hr {
+  margin-top: 60px;
+}

@@ -7,6 +7,9 @@
   <title>Daniel Fischer - Portfolio | Group projects</title>
   <link rel="icon" type="image/png" href="../../../src/images/favicon.png"/>
   <!-- Libraries -->
+  <!-- Modelviewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
   <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -62,12 +65,12 @@
       <li>Education/Work</li>
     </a>
 
-    <a href="../../../index.html#skills" class="navLink">
-      <li>Skills</li>
-    </a>
-
     <a href="../../../index.html#projects" class="navLink">
       <li>Projects</li>
+    </a>
+
+    <a href="../../../index.html#skills" class="navLink">
+      <li>Skills</li>
     </a>
 
     <a href="../../../index.html#contact" class="navLink">
@@ -81,53 +84,100 @@
       <div id="headerProjectLogo"></div>
     </div>
     <h1>Game Development</h1>
-    <h2>Solo Project</h2>
+    <h2>Solo Projects</h2>
   </div>
 </header>
 
-<section>
+<section id="project">
   <h3>Details</h3>
   <div class="projectCategory">
-    <h4>Programming</h4>
-    <div class="projectCategoryDetails">
-      <div class="projectCategory">
-        <h4>Star's Fiction</h4>
+    <h4>Aerolith Entertainment (2021)</h4>
+    <p>My contributions to a <a href="../../group/aerolith" target="_blank">group project</a></p>
 
-        <div class="projectCategoryItem">
-          [Blueprints]<br>
-          Player:
+    <div class="projectList">
+      <div class="projectItem">
+        <h4>Visual programming (Blueprints)</h4>
+        <h4 class="projectPreviewTitle">Player:</h4>
+        <li>Movement system</li>
           <ul>
-            <li>Movement system (sprinting, stamina)</li>
-            <li>Shooting system (raycasting, projectiles)</li>
-            <li>Gun system (shooting, ammunition, reloading, overheating, aiming)</li>
-            <li>Triggering and handling animations/sounds (shooting, overheating, aiming, wall-avoidance)</li>
+            <li>Sprinting</li>
+            <li>Stamina</li>
           </ul>
-          AI:
+        <li>Shooting system</li>
           <ul>
-            <li>Patrolling</li>
-            <li>Chasing</li>
-            <li>Damage system (taking/inflicting damage)</li>
+            <li>Raycasting</li>
+            <li>Fake Projectiles shooting to center of screen</li>
+            <div class="projectPreview">
+              <img src="../../../src/images/projects/solo/game/particles.png">
+              <p class="projectPreviewDesc">Integration of emitters and particles</p>
+            </div>
           </ul>
+        <li>Gun system</li>
+          <ul>
+            <li>Shooting</li>
+            <li>Ammunition</li>
+            <li>Reloading</li>
+            <li>Overheating</li>
+            <li>Aiming</li>
+          </ul>
+        <li>Triggering and handling animations/sounds</li>
+          <ul>
+            <li>Shooting</li>
+            <li>Overheating</li>
+            <li>Aiming</li>
+            <li>Gun-through-wall avoidance</li>
+            <div class="projectPreview">
+              <img src="../../../src/images/projects/solo/game/wallavoidance.png">
+              <p class="projectPreviewDesc">Collision triggers animation</p>
+            </div>
+          </ul>
+
+        <h4 class="projectPreviewTitle">AI:</h4>
+        <li>Patrolling</li>
+        <div class="projectPreview">
+          <img src="../../../src/images/projects/solo/game/patrolling.png">
+          <p class="projectPreviewDesc">Patrolling through specific points</p>
         </div>
 
-        <br>
+        <li>Chasing</li>
+        <li>Damage system</li>
+          <ul>
+            <li>Taking damage</li>
+            <li>Inflicting damage</li>
+          </ul>
 
-        <div class="projectCategoryItem">
-          [Animations Blueprint]<br>
+        <div class="projectPreview">
+          <img src="../../../src/images/projects/solo/game/damagescreen.png">
+          <p class="projectPreviewDesc">Damage screen indicator</p>
+        </div>
+      </div>
+
+      <div class="projectItem">
+        <h4 class="projectPreviewTitle">Animations Blueprint:</h4>
+        <ul>
           <li>Animations Blueprint for Player</li>
+        </ul>
+        <div class="projectPreview">
+          <img src="../../../src/images/projects/solo/game/animbp.png">
+          <p class="projectPreviewDesc">Player animation blueprint</p>
         </div>
       </div>
     </div>
   </div>
 
+  <hr>
 
   <div class="projectCategory">
-    <h4>Modelling</h4>
-    <div class="projectList">
-      <div class="projectItem">
-        <h4>Product</h4>
-      </div>
-    </div>
+    <h4>Various unpublished game mods and mini games</h4>
+    <p>Bird shooting game [HTML, CSS, JavaScript]</p>
+    <p>Minecraft mod [Java]</p>
+    <p>Evolve island, tile-based city builder [PHP]</p>
+    <p>Memory game for browser [HTML, CSS, JavaScript]</p>
+    <p>Quizlet-like game [Java]</p>
+    <p>Connect Four [Java]</p>
+    <p>Text-based adventure game [Java]</p>
+    <p>and more...</p>
+  </div>
 </section>
 
 <footer>
@@ -186,4 +236,6 @@
 </body>
 <!-- JavaScript -->
 <script src="../../../src/scripts/main.js"></script>
+
+
 </html>

@@ -46,24 +46,28 @@ section {
   margin-bottom: 15px;
 }
 
-.projectCategory img {
-  width: 100%;
-}
-
 .projectList {
   display: flex;
   flex-flow: column;
-
 }
 
 .projectItem {
   margin-bottom: 25px;
 }
 
-.projectCategoryDetails {
-  padding: 15px;
-  border: 1px solid dimgray;
-  border-radius: 5px;
+#project .appIcon {
+  height: 40px;
+  margin-bottom: -10px;
+  border-radius: 10px;
+}
+
+.projectItem ul {
+  margin: 5px;
+  list-style-type: circle;
+}
+
+.projectItem li {
+  padding: 5px;
 }
 
 .projectPreviewTitle {
@@ -78,6 +82,27 @@ section {
 
 .projectPreviews img {
   width: 20%;
+  border-radius: 5px;
+}
+
+.projectPreview {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.projectPreview img {
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.projectPreviewDesc {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 /*----------------------------------------------------------------------------------------------------
@@ -97,5 +122,9 @@ section {
   .projectPreviews img {
     width: 100%;
     margin-bottom: 25px;
+  }
+  .projectPreview img {
+    height: auto;
+    width: 100%;
   }
 }
