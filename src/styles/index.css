@@ -570,7 +570,7 @@ header #headerAvatar {
 .percBg {
   width: 100%;
   height: 10px;
-  background: #dadada;
+  background: var(--accent);
   border-radius: 10px;
 }
 
