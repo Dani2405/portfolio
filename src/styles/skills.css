@@ -1,17 +1,41 @@
+.skillLists {
+  width: 100%;
+}
+
 .skillList {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .skillListCategory {
-  width: 100%;
-  margin: 25px 0;
+  width: auto;
+  margin-bottom: 25px;
 }
 
 #skillListLanguages .skillListItem {
   width: 100%;
 }
 
+.skillListItem {
+}
+
 hr {
   margin-top: 60px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+ * Mobile
+----------------------------------------------------------------------------------------------------*/
+
+/*-------------------*/
+@media only screen and (max-width: 950px) {
+  .skillSectionTitle {
+    font-size: 28px;
+  }
+
+  .skillListCategory h4 {
+    font-size: 26px;
+  }
 }

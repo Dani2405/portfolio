@@ -112,7 +112,11 @@ section {
 /*-------------------*/
 @media only screen and (max-width: 950px) {
   .projectHeader h1 {
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+
+  .projectCategory h4 {
+    font-size: 28px;
   }
 
   .projectPreviews {

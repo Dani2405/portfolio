@@ -604,6 +604,7 @@ header #headerAvatar {
   padding: 15px 25px;
   color: white;
   background: var(--accent);
+  text-align: center;
 }
 
 #readMore a:hover {
@@ -837,6 +838,10 @@ footer .links svg:hover {
     flex-flow: column;
   }
 
+  .skillSectionTitle {
+    font-size: 24px;
+  }
+
   #readMore hr {
     width: 20%;
   }
@@ -888,7 +893,7 @@ footer .links svg:hover {
 /*-------------------*/
 @media only screen and (max-width: 580px) {
   section h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-wrap: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
