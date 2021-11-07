@@ -549,6 +549,15 @@ header #headerAvatar {
   background-color: #0F1011;
 }
 
+#projects .projectItem h1 {
+  color: white;
+}
+
+#projects .projectItem h1 {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
 #projects .projectIcon {
   width: 250px;
   height: 250px;
@@ -580,6 +589,11 @@ header #headerAvatar {
 #projects .disabled {
   opacity: .35;
   pointer-events: none;
+}
+
+#projects .disabled h1 {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*
