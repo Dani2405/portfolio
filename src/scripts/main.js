@@ -128,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 window.addEventListener('scroll',function(e) {
   updateMenu();
-  checkScreenSize();
 });
 
 window.addEventListener("resize", function(e) {
