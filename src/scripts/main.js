@@ -9,13 +9,6 @@ const contactFormStatus = document.querySelector("#contactFormStatus");
 /*
  * Functions
  */
-function isMobile() {
-  if(mobileDevice)
-    return true;
-  else
-    return false;
-}
-
 // Debounce function
 function debounce(func, wait) {
   let timeoutID;
@@ -60,7 +53,7 @@ function updateMenu() {
 }
 
 function mobileMenu() {
-  if(isMobile) {
+  if(mobileDevice) {
     document.getElementById("menu").classList.add("mobileMenu");
   }
 }
@@ -127,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 window.addEventListener('scroll',function(e) {
-  if (!isMobile) {
+  if (!mobileDevice) {
     updateMenu();
   }
 });
