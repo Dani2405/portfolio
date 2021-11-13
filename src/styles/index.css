@@ -74,12 +74,6 @@ html, body {
   letter-spacing: 1px;
 }
 
-body {
-  -webkit-overflow-scrolling: touch;
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   background-color: var(--secondary);
