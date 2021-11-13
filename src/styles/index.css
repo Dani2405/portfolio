@@ -74,6 +74,10 @@ html, body {
   letter-spacing: 1px;
 }
 
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: var(--secondary);
