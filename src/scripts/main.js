@@ -127,15 +127,13 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 window.addEventListener('scroll',function(e) {
-  //updateMenu();
-  console.log("scrolling");
+  updateMenu();
 });
 
 window.addEventListener("resize", function(e) {
-  //updateMenu();
-  //checkScreenSize();
-  //debounce(updateDeviceType, 50);
-  console.log("resize");
+  updateMenu();
+  checkScreenSize();
+  debounce(updateDeviceType, 50);
 });
 
 /**
