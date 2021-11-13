@@ -126,6 +126,12 @@ document.addEventListener("DOMContentLoaded", function(){
   mobileMenu();
 });
 
+window.addEventListener('scroll',function(e) {
+  if (!isMobile) {
+    updateMenu();
+  }
+});
+
 window.addEventListener("resize", function(e) {
   updateMenu();
   checkScreenSize();
