@@ -126,14 +126,16 @@ document.addEventListener("DOMContentLoaded", function(){
   mobileMenu();
 });
 
-/*window.addEventListener('scroll',function(e) {
-  updateMenu();
-});*/
+window.addEventListener('scroll',function(e) {
+  //updateMenu();
+  console.log("scrolling");
+});
 
 window.addEventListener("resize", function(e) {
-  updateMenu();
-  checkScreenSize();
-  debounce(updateDeviceType, 50);
+  //updateMenu();
+  //checkScreenSize();
+  //debounce(updateDeviceType, 50);
+  console.log("resize");
 });
 
 /**
