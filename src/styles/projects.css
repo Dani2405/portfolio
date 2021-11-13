@@ -136,6 +136,7 @@ section {
 @media only screen and (max-width: 950px) {
   .projectHeader h1 {
     font-size: 1.5em;
+    padding: 0 5px;
   }
 
   .projectCategory h4 {
