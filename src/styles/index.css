@@ -74,11 +74,6 @@ html, body {
   letter-spacing: 1px;
 }
 
-body {
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   background-color: var(--secondary);
@@ -1159,6 +1154,7 @@ footer .links svg:hover {
 /*-------------------*/
 @media only screen and (max-width: 480px) {
   #signature {
+    margin-bottom: 40px;
   }
 }
 
