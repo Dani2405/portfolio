@@ -521,6 +521,7 @@ header #headerAvatar {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   text-align: center;
+  flex-wrap: wrap;
 }
 #projects .projectItem {
   padding: 15px;

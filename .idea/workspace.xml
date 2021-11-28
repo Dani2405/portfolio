@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/projects/solo/art/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/solo/art/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/aerolith/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/aerolith/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/solo/art" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -62,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\solo\art" />
       <recent name="C:\Users\Dani2405\IdeaProjects\daniel\src\assets\bird" />
     </key>
   </component>
@@ -96,7 +98,7 @@
       <workItem from="1636819179005" duration="465000" />
       <workItem from="1637961433125" duration="483000" />
       <workItem from="1638032941491" duration="955000" />
-      <workItem from="1638129554009" duration="1531000" />
+      <workItem from="1638129554009" duration="6914000" />
     </task>
     <servers />
   </component>
