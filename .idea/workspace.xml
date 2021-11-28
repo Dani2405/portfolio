@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/projects/group/odys/drinkioapp4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/aerolith/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/aerolith/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,9 @@
       <workItem from="1636738462559" duration="5579000" />
       <workItem from="1636791299796" duration="7112000" />
       <workItem from="1636819179005" duration="465000" />
-      <workItem from="1637961433125" duration="302000" />
+      <workItem from="1637961433125" duration="483000" />
+      <workItem from="1638032941491" duration="955000" />
+      <workItem from="1638129554009" duration="1531000" />
     </task>
     <servers />
   </component>
