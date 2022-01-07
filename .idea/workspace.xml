@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projects/solo/audio/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/solo/audio/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/electro_shot.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/heartbeat.WAV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/discord1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/discord2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadanifinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Fortitude.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Fortitude1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Terrene1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Terrene2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/t3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/aerolite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/odys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/odys/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/solo/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/art/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/mobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/mobile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/heartbeat.WAV" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/heartbeat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/projects.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +134,11 @@
       <workItem from="1638296845310" duration="1228000" />
       <workItem from="1638621584142" duration="426000" />
       <workItem from="1639005541302" duration="622000" />
-      <workItem from="1641320292054" duration="14220000" />
+      <workItem from="1641320292054" duration="14299000" />
+      <workItem from="1641393781521" duration="14647000" />
+      <workItem from="1641465882892" duration="1891000" />
+      <workItem from="1641560199979" duration="342000" />
+      <workItem from="1641575331671" duration="5289000" />
     </task>
     <servers />
   </component>
