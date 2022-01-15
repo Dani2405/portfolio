@@ -106,6 +106,23 @@ section a:hover {
   border-radius: 5px;
 }
 
+.projectItem .modelsPrev {
+  margin-bottom: 25px;
+}
+
+.modelsPrev video, .modelsPrev img {
+  width: 45%;
+  border-radius: 5px;
+}
+
+.modelsPrev video {
+  margin-bottom: 25px;
+}
+
+.drawingPrev p {
+  width: 45%;
+}
+
 .projectPreview {
   margin-top: 15px;
   display: -webkit-box;
@@ -133,6 +150,10 @@ section a:hover {
   margin-top: 5px;
 }
 
+.drawingPrev img {
+  width: 75%;
+}
+
 #mockups img {
   width: 80%;
 }
@@ -149,7 +170,7 @@ section a:hover {
   }
 
   .projectCategory h4 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .projectList h4 {
@@ -173,9 +194,31 @@ section a:hover {
     width: 100%;
     margin-bottom: 25px;
   }
+
   .projectPreview img {
     height: auto;
     width: 100%;
+  }
+
+  .projectItem .modelsPrev {
+    margin-bottom: 0;
+  }
+
+  .projectItem .drawingPrev {
+    margin-bottom: -50px;
+  }
+
+  .drawingPrev img {
+    width: 100% !important;
+  }
+
+  .drawingPrev p {
+    width: 100%;
+  }
+
+  .modelsPrev video {
+    width: 100%;
+    border-radius: 5px;
   }
 
   .projectPreviewTitle {

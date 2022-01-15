@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/discord1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/discord2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/aerolite/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadani5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/dadani/dadanifinal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Fortitude.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Fortitude1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Terrene1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/Terrene2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/b3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/logo/logo-ideas/t3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/drawings/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/drawings/portraitReference.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/projects/solo/art/drawings/spider-man.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/aerolite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/odys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/odys/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/solo/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/art/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/mobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/mobile/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/heartbeat.WAV" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/heartbeat.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/projects.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +56,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/audio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/projects/solo/art/drawings" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -89,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\solo\art\drawings" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\audio" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\solo\audio" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\solo\art" />
@@ -138,7 +116,9 @@
       <workItem from="1641393781521" duration="14647000" />
       <workItem from="1641465882892" duration="1891000" />
       <workItem from="1641560199979" duration="342000" />
-      <workItem from="1641575331671" duration="5289000" />
+      <workItem from="1641575331671" duration="6032000" />
+      <workItem from="1641923573594" duration="617000" />
+      <workItem from="1642257111859" duration="10481000" />
     </task>
     <servers />
   </component>
