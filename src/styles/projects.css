@@ -158,6 +158,38 @@ section a:hover {
   width: 80%;
 }
 
+.teamList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.teamListItem {
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.teamListItem:hover {
+  background: #0e0f10;
+}
+
+.teamListItem p {
+  text-align: center;
+}
+
+.teamListItemIcon {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: 5px solid var(--accent);
+  background: #313B3D;
+}
+
+.teamRole {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /*----------------------------------------------------------------------------------------------------
  * Mobile
 ----------------------------------------------------------------------------------------------------*/
@@ -190,8 +222,9 @@ section a:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   .projectPreviews img {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 25px;
   }
 

@@ -273,11 +273,12 @@ header #headerAvatar {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .links svg {
   width: 50px;
+  margin: 0 15px;
 }
 
 /*
@@ -1150,6 +1151,7 @@ footer .links svg:hover {
 
 /*-------------------*/
 @media only screen and (max-width: 500px) {
+
 }
 
 /*-------------------*/
