@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projects/group/BGJ20221/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/group/BGJ20221/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/child1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/child2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/child3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster5_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/concept-art/monster5_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/final-art/final1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/final-art/final2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/final-art/final3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/final-art/final4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/final-art/final5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/gameplay.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/mockup/mockup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/team/DF.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/team/ES.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/team/MP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/group/BGJ20221/team/YW.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/aerolite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/odys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/odys/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/group/oppy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/oppy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/art/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/audio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/audio/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/mobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/mobile/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/solo/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/skills/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/projects.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +51,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/group/BGJ20221/team" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/projects/solo/game/spotem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -95,18 +61,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\solo\game\spotem" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\group\BGJ20221\team" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\group\BGJ20221" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\solo\art\drawings" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\audio" />
-      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\projects\solo\audio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\solo\game\spotem" />
+      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\solo\game" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221\team" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221\final-art" />
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221\concept-art" />
-      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221\mockup" />
-      <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -155,7 +121,10 @@
       <workItem from="1642949095272" duration="1255000" />
       <workItem from="1643460631575" duration="300000" />
       <workItem from="1646306440007" duration="17681000" />
-      <workItem from="1646396469374" duration="1469000" />
+      <workItem from="1646396469374" duration="14496000" />
+      <workItem from="1646426881948" duration="616000" />
+      <workItem from="1646441657911" duration="2958000" />
+      <workItem from="1646479094873" duration="689000" />
     </task>
     <servers />
   </component>
