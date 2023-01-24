@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/aerolite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/aerolite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/bgj20221/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/bgj20221/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/odys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/odys/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/group/oppy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/group/oppy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/art/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/audio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/audio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/game-development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/game-development/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/solo/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/solo/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/skills/index.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +62,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/projects/solo/game/spotem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -75,7 +86,22 @@
       <recent name="E:\Users\Dani2405\IdeaProjects\daniel\src\images\projects\group\BGJ20221\concept-art" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0aca5b66-16ba-434d-af6b-00ae285f4821" name="Default Changelist" comment="" />
@@ -127,10 +153,22 @@
       <workItem from="1646479094873" duration="689000" />
       <workItem from="1646647169402" duration="355000" />
       <workItem from="1647115134922" duration="72000" />
+      <workItem from="1674575344958" duration="746000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
