@@ -102,6 +102,11 @@ function contactFormError() {
   }, 3000);
 }
 
+function setCurrentDate() {
+  var year = new Date().getFullYear();
+  document.getElementById("currentYear").innerHTML = year;
+}
+
 /**
  * Init
  */
@@ -117,6 +122,7 @@ init();
 
 document.addEventListener("DOMContentLoaded", function(){
   mobileMenu();
+  setCurrentDate();
 });
 
 window.addEventListener('scroll',function(e) {
@@ -133,31 +139,36 @@ window.addEventListener("resize", function(e) {
 
 /**
  * handle the contact form submission event
+ * [Only if we're on the root page]
  */
-contactForm.addEventListener("submit", function (ev) {
-  ev.preventDefault();
+var first = window.location.origin+"/";
+var second = window.location.href;
+if(first === second.substring(0 , second.indexOf("#") != -1 ? second.indexOf("#") : second.length)) {
+  contactForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
 
-  const data = JSON.stringify(Object.fromEntries(new FormData(contactForm)));
+    const data = JSON.stringify(Object.fromEntries(new FormData(contactForm)));
 
-  fetch("https://formspree.io/f/xqkwvbkd", {
-    method: "POST",
-    body: data,
-    headers: {
-      Accept: "application/json",
-    },
-  })
-    .then((response) => response.json())
-    .then((response) => {
-      if (response.ok) {
-        contactForm.reset();
-        contactFormSuccess();
-      } else {
-        console.log(`Form not submitted: ${response}`);
-        contactFormError();
-      }
+    fetch("https://formspree.io/f/xqkwvbkd", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
     })
-    .catch((error) => {
-      console.log(`Error: ${error}`);
-      contactFormError();
-    });
-});
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {
+          contactForm.reset();
+          contactFormSuccess();
+        } else {
+          console.log(`Form not submitted: ${response}`);
+          contactFormError();
+        }
+      })
+      .catch((error) => {
+        console.log(`Error: ${error}`);
+        contactFormError();
+      });
+  });
+}
