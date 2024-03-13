@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta data-i18n="page.metadata.description" name="description" content="Welcome to my portfolio">
+  <meta content="#141718" name="theme-color">
+
+  <title>Daniel Fischer - Portfolio | Web Development</title>
+  <link rel="icon" type="image/png" href="../../src/images/favicon.png"/>
+  <!-- Libraries -->
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- /Libraries -->
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+  <!-- CSS -->
+  <link href="../../src/styles/index.css" rel="stylesheet">
+  <link href="../../src/styles/projects.css" rel="stylesheet">
+
+  <style>
+    #headerProjectLogo {
+      background-image: url("icon.png");
+      background-size: 200px 200px, 300px 300px;
+      background-position: center center;
+      background-color: #161A1B;
+    }
+  </style>
+</head>
+<body>
+  <div id="navComponent"></div>
+
+  <header id="home" class="projectHeader">
+    <div>
+      <div id="headerContainer">
+        <div id="headerProjectLogo"></div>
+      </div>
+      <h1>Web</br>Development</h1>
+    </div>
+  </header>
+
+  <div id="projectViewToggler">
+    <a onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
+    <a onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
+  </div>
+
+  <section class="project" id="soloProjects">
+    <h3>Details</h3>
+    <div class="projectCategory">
+      <h4>2019-Now</h4>
+
+      <div class="projectList">
+
+        <div class="projectItem">
+          <h4>Website for Aerolite Entertainment (<a href="https://aerolite.games/" target="_blank">Live Preview</a>)</h4>
+          <p>Currently under development</p>
+        </div>
+
+        <div class="projectItem">
+          <h4>Portfolio (Current site)</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/web/portfolio2.png">
+          </div>
+        </div>
+
+        <div class="projectItem">
+          <h4>Portfolio 'Coming soon' mini-game (<a href="../../coming-soon" target="_blank">Live Preview</a>)</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/web/comingsoon.png">
+          </div>
+        </div>
+
+        <div class="projectItem">
+          <h4>Oppy Website (<a href="https://oppy.app/" target="_blank">Live Preview</a>)</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/web/oppy.png">
+          </div>
+        </div>
+
+        <div class="projectItem">
+          <h4>Various unpublished projects...</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="projectCategory">
+      <div class="projectList">
+        <h4>2013-2018</h4>
+
+          <div class="projectItem">
+            <h4>Blog 2 (Version 2)</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/blog3.png">
+            </div>
+          </div>
+          <div class="projectItem">
+            <h4>OS-like website</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/DaniOS.png">
+            </div>
+          </div>
+          <div class="projectItem">
+            <h4>Password generator</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/pgen.png">
+            </div>
+          </div>
+          <div class="projectItem">
+            <h4>Blog 2 (Version 1)</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/blog2.gif">
+            </div>
+          </div>
+          <div class="projectItem">
+            <h4>Blog 1</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/blog1.png">
+            </div>
+          </div>
+          <div class="projectItem">
+            <h4>First portfolio</h4>
+            <div class="projectPreview">
+              <img src="../../src/images/projects/solo/web/portfolio1.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="projectItem">
+          <h4>Older unpublished projects...</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="project" id="groupProjects">
+    <h3>Group Projects</h3>
+
+    <div class="projectGroupItems">
+      <a href="./odys">
+        <div class="projectGroupItem">
+          <div class="projectGroupIcon" style="background-image: url('./odys/logo.png');"></div>
+          <h1>Odys Group</h1>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div id="footerComponent"></div>
+</body>
+<!-- JavaScript -->
+<script src="../../../src/scripts/main.js"></script>
+<script src="../../../src/scripts/components.js"></script>
+<script src="../../../src/twemoji/twemoji.min.js"></script>
+<script>
+  twemoji.parse(document.body,
+    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+  );
+</script>
+</html>

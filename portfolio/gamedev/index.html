@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta data-i18n="page.metadata.description" name="description" content="Welcome to my portfolio">
+  <meta content="#141718" name="theme-color">
+
+  <title>Daniel Fischer - Portfolio | Game Development</title>
+  <link rel="icon" type="image/png" href="../../src/images/favicon.png"/>
+  <!-- Libraries -->
+  <!-- Modelviewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- /Libraries -->
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+  <!-- CSS -->
+  <link href="../../src/styles/index.css" rel="stylesheet">
+  <link href="../../src/styles/projects.css" rel="stylesheet">
+
+  <style>
+    #headerProjectLogo {
+      background-image: url("icon.png");
+      background-size: 200px 200px, 300px 300px;
+      background-position: center center;
+      background-color: #161A1B;
+    }
+  </style>
+</head>
+<body>
+  <div id="navComponent"></div>
+
+  <header id="home" class="projectHeader">
+    <div>
+      <div id="headerContainer">
+        <div id="headerProjectLogo"></div>
+      </div>
+      <h1>Game</br>Development</h1>
+    </div>
+  </header>
+
+  <div id="projectViewToggler">
+    <a onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
+    <a onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
+  </div>
+
+  <section class="project" id="soloProjects">
+    <h3>Solo Projects</h3>
+    <div class="projectCategory">
+      <h4>Spot'em (2022)</h4>
+      <p>
+        Homework for ZHdK University application<br>
+        Period: 27th of January 2022 - 15th of February 2022<br>
+        Status: <a href="https://dani2405.itch.io/spotem">Published</a><br>
+        Game Engine: Unreal Engine
+      </p>
+
+      <div class="projectList">
+        <div class="projectItem">
+          <h4>Demo</h4>
+          <div class="projectPreview videoContainer">
+            <iframe id="gamePlayDemo"
+                    src="https://www.youtube.com/embed/Ex1d4Donio4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+
+          <h4>Mockup</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/mockup1.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/mockup2.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/mockup3.png">
+          </div>
+
+
+          <h4>Concept art</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/conceptart1.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/conceptart2.png">
+            <p class="projectPreviewDesc">Final concept</p>
+          </div>
+
+          <h4>Final art/look</h4>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/finalart1.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/finalart2.png">
+            <p class="projectPreviewDesc">Randomly generated variations</p>
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/finalart3.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/finalart4.png">
+          </div>
+          <div class="projectPreview">
+            <img src="../../src/images/projects/solo/game/spotem/finalart5.png">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="groupProjects">
+    <h3>Group Projects</h3>
+    <div class="projectGroupItems">
+      <a href="./bgj20221">
+        <div class="projectGroupItem">
+          <div class="projectGroupIcon" style="background-image: url('./bgj20221/logo.png');"></div>
+          <h1>Brackeys</br>Game Jam 2022.1</h1>
+        </div>
+      </a>
+
+      <a href="./aerolite">
+        <div class="projectGroupItem">
+          <div class="projectGroupIcon" style="background-image: url('./aerolite/logo.png');"></div>
+          <h1>Aerolite</br>Entertainment</h1>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <div id="footerComponent"></div>
+</body>
+<!-- JavaScript -->
+<script src="../../../src/scripts/main.js"></script>
+<script src="../../../src/scripts/components.js"></script>
+<script src="../../../src/twemoji/twemoji.min.js"></script>
+<script>
+  twemoji.parse(document.body,
+    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+  );
+</script>
+</html>
