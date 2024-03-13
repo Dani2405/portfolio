@@ -1,37 +1,15 @@
-/*
- * Variables
- */
 let mobileDevice;
 let showMenu = false;
-const contactForm = document.querySelector("#contactForm");
-const contactFormStatus = document.querySelector("#contactFormStatus");
-
-/*
- * Functions
- */
-// Debounce function
-function debounce(func, wait) {
-  let timeoutID;
-  return function () {
-    clearTimeout(timeoutID);
-    timeoutID = setTimeout(func, wait);
-  };
-}
-
-// Checks and returns the size of the screen
-function checkScreenSize() {
-  intViewportWidth = window.innerWidth;
-}
 
 // Updates the menu depending on the scroll position
-function updateMenu() {
+async function updateMenu() {
   var viewportOffset = document.getElementById("home").getBoundingClientRect();
 
   // these are relative to the viewport
   var top = viewportOffset.top-250;
-  elHeight = window.innerHeight;;
-  elWidth = window.innerWidth;
-  menu = document.getElementById("menu");
+  let elHeight = window.innerHeight;
+  let elWidth = window.innerWidth;
+  let menu = document.getElementById("menu");
 
   if(elWidth >= 1500) {
     menu.classList.remove("mobileMenu");
@@ -52,26 +30,22 @@ function updateMenu() {
   }
 }
 
-function mobileMenu() {
-  if(mobileDevice) {
-    document.getElementById("menu").classList.add("mobileMenu");
-  }
-}
-
 function toggleMenu() {
   showMenu = !showMenu;
 
   if(showMenu) {
     document.getElementById("navLinks").style.display = "flex";
     document.getElementById("menuIcon").innerHTML = "<span class=\"material-icons-round\">close</span>"
+    document.getElementById("menu").style.paddingBottom = "25px";
   } else {
     document.getElementById("navLinks").style.display = "none";
     document.getElementById("menuIcon").innerHTML = "<span class=\"material-icons-round\">menu</span>"
+    document.getElementById("menu").style.paddingBottom = 0;
   }
 }
 
 /**
- * check and update device type
+ * Check and update device type
  */
 function updateDeviceType() {
   mobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -80,31 +54,87 @@ function updateDeviceType() {
 }
 
 /**
- * contact form success
+ * Toggle between Solo projects and Group projects
  */
-function contactFormSuccess() {
-  contactForm.reset();
-  contactFormStatus.innerHTML = "Thanks for contacting us!";
+function toggleProjectView(obj) {
+  // Swap activeProject and inactiveProject ids
+  var activeProjectId = obj.id;
+  if(activeProjectId === 'activeProject')
+    return;
 
-  setTimeout(() => {
-    contactFormStatus.innerHTML = "";
-  }, 3000);
+  var inactiveProjectId = (activeProjectId === 'activeProject') ? 'inactiveProject' : 'activeProject';
+
+  var activeProject = document.getElementById(activeProjectId);
+  var inactiveProject = document.getElementById(inactiveProjectId);
+
+  activeProject.id = inactiveProjectId;
+  inactiveProject.id = activeProjectId;
+
+  // Toggle visibility of soloProjects and groupProjects
+  var soloProjects = document.getElementById('soloProjects');
+  var groupProjects = document.getElementById('groupProjects');
+
+  if (soloProjects.style.display === 'none') {
+    soloProjects.style.display = 'block';
+    groupProjects.style.display = 'none';
+  } else {
+    soloProjects.style.display = 'none';
+    groupProjects.style.display = 'block';
+  }
 }
 
 /**
- * contact form error
+ * Randomize the order of the hobbies list
  */
-function contactFormError() {
-  contactFormStatus.innerHTML = "Oops! There was a problem.";
+function randomizeHobbies() {
+  // Get the parent div element
+  var parentDiv = document.getElementById('hobbies');
 
-  setTimeout(() => {
-    contactFormStatus.innerHTML = "";
-  }, 3000);
+  if (!parentDiv)
+    return;
+
+  // Get all div elements with the class "hobby" within the parent div
+  var hobbyDivs = parentDiv.querySelectorAll('.hobby');
+
+  // Convert NodeList to array to use array methods
+  hobbyDivs = Array.from(hobbyDivs);
+
+  // Shuffle the array to randomize the order
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
+  // Shuffle the hobbyDivs array
+  var shuffledHobbyDivs = shuffleArray(hobbyDivs);
+
+  // Clear the parent div's content
+  parentDiv.innerHTML = '';
+
+  // Re-append the shuffled divs to the parent div
+  shuffledHobbyDivs.forEach(function(div) {
+    parentDiv.appendChild(div);
+  });
 }
 
-function setCurrentDate() {
-  var year = new Date().getFullYear();
-  document.getElementById("currentYear").innerHTML = year;
+/**
+ * Update current age
+ */
+function setCurrentAge() {
+  var ageDiv = document.getElementById("aboutMeAge")
+
+  if (!ageDiv)
+    return;
+
+  const birthDate = new Date(1995, 4, 24); //0-indexed
+  const today = new Date();
+  ageDiv.textContent = today.getFullYear() - birthDate.getFullYear() - ((today.getMonth() < birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())) ? 1 : 0);
 }
 
 /**
@@ -114,15 +144,14 @@ function init() {
   updateDeviceType();
 }
 
-init();
 
 /**
  * Event listeners
  */
-
 document.addEventListener("DOMContentLoaded", function(){
-  mobileMenu();
-  setCurrentDate();
+  init();
+  randomizeHobbies();
+  setCurrentAge();
 });
 
 window.addEventListener('scroll',function(e) {
@@ -133,42 +162,4 @@ window.addEventListener('scroll',function(e) {
 
 window.addEventListener("resize", function(e) {
   updateMenu();
-  checkScreenSize();
-  debounce(updateDeviceType, 50);
 });
-
-/**
- * handle the contact form submission event
- * [Only if we're on the root page]
- */
-var first = window.location.origin+"/";
-var second = window.location.href;
-if(first === second.substring(0 , second.indexOf("#") != -1 ? second.indexOf("#") : second.length)) {
-  contactForm.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-
-    const data = JSON.stringify(Object.fromEntries(new FormData(contactForm)));
-
-    fetch("https://formspree.io/f/xqkwvbkd", {
-      method: "POST",
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        if (response.ok) {
-          contactForm.reset();
-          contactFormSuccess();
-        } else {
-          console.log(`Form not submitted: ${response}`);
-          contactFormError();
-        }
-      })
-      .catch((error) => {
-        console.log(`Error: ${error}`);
-        contactFormError();
-      });
-  });
-}
