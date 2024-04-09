@@ -168,12 +168,6 @@
     <div id="skillLists">
       <h3 class="skillSectionTitle">Languages</h3>
       <div id="skillListLanguages" class="skillList">
-        <div class="skillListItem">
-          <h4>🇮🇹 Italian</h4>
-          <div class="percBg">
-            <div class="percBar" style="width: 100%"><div>Native</div></div>
-          </div>
-        </div>
 
         <div class="skillListItem">
           <h4>🇺🇸 English (US)</h4>
@@ -183,9 +177,16 @@
         </div>
 
         <div class="skillListItem">
+          <h4>🇮🇹 Italian</h4>
+          <div class="percBg">
+            <div class="percBar" style="width: 100%"><div>Native</div></div>
+          </div>
+        </div>
+
+        <div class="skillListItem">
           <h4>🇩🇪 German</h4>
           <div class="percBg">
-            <div class="percBar" style="width: 100%"><div>Native (C2)</div></div>
+            <div class="percBar" style="width: 100%"><div>Native</div></div>
           </div>
         </div>
       </div>
@@ -340,7 +341,7 @@
 <script src="./src/twemoji/twemoji.min.js"></script>
 <script>
   twemoji.parse(document.body,
-    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+    {base: './src/twemoji/', folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
   );
 </script>
 </html>

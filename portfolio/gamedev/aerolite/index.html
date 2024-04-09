@@ -20,6 +20,17 @@
   <!-- CSS -->
   <link href="../../../src/styles/index.css" rel="stylesheet">
   <link href="../../../src/styles/projects.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7NBZDGBCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V7NBZDGBCC');
+  </script>
+
   <style>
     #headerProjectLogo {
       background-image: url("logo.png");
@@ -155,7 +166,7 @@
 <script src="../../../src/twemoji/twemoji.min.js"></script>
 <script>
   twemoji.parse(document.body,
-    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+    {base: '../../../src/twemoji/', folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
   );
 </script>
 </html>

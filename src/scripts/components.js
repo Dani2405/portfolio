@@ -1,34 +1,21 @@
 /**
  * Component loader
  */
-async function loadComponent(url, elementId) {
+async function loadComponent(url) {
   const response = await fetch(url);
-  const html = await response.text();
-  document.getElementById(elementId).innerHTML = html;
-}
-
-async function navComponent() {
-  const response = await fetch('../../../src/components/nav.html');
-  const html = await response.text();
-  return html;
-}
-
-async function footerComponent() {
-  const response = await fetch('../../../src/components/footer.html');
-  const html = await response.text();
-  return html;
+  return await response.text();
 }
 
 /**
  * Event listeners
  */
 document.addEventListener("DOMContentLoaded", function(){
-  navComponent()
+  loadComponent('../../../src/components/nav.html')
     .then(html => {
       document.getElementById('navComponent').innerHTML = html;
     });
 
-  footerComponent()
+  loadComponent('../../../src/components/footer.html')
     .then(html => {
       document.getElementById('footerComponent').innerHTML = html;
       setCurrentDate();
@@ -40,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * Set copyright year to today
  */
 function setCurrentDate() {
-  var year = new Date().getFullYear();
-  document.getElementById("currentYear").innerHTML = year;
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 }
 
 function mobileMenu() {
@@ -51,6 +37,7 @@ function mobileMenu() {
       document.getElementById("menu").classList.add("mobileMenu");
     else
        menu.classList.remove("mobileMenu");
+
 }
 
 document.addEventListener("DOMContentLoaded", function(){

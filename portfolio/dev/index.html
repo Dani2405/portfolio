@@ -21,6 +21,16 @@
   <link href="../../src/styles/index.css" rel="stylesheet">
   <link href="../../src/styles/projects.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7NBZDGBCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V7NBZDGBCC');
+  </script>
+
   <style>
     #headerProjectLogo {
       background-image: url("icon.png");
@@ -43,8 +53,8 @@
   </header>
 
   <div id="projectViewToggler">
-    <a onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
-    <a onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
+    <a href="#solo" onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
+    <a href="#group" onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
   </div>
 
   <section class="project" id="soloProjects">
@@ -147,12 +157,14 @@
   <div id="footerComponent"></div>
 </body>
 <!-- JavaScript -->
-<script src="../../../src/scripts/main.js"></script>
-<script src="../../../src/scripts/components.js"></script>
-<script src="../../../src/twemoji/twemoji.min.js"></script>
+<script src="../../src/scripts/main.js"></script>
+<script src="../../src/scripts/components.js"></script>
+<script src="../../src/twemoji/twemoji.min.js"></script>
 <script>
   twemoji.parse(document.body,
-    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+    {base: '../../src/twemoji/', folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
   );
+
+  projectView()
 </script>
 </html>

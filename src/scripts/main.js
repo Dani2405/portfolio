@@ -1,8 +1,16 @@
 let mobileDevice;
 let showMenu = false;
 
+function debounce(func, delay) {
+  let timeout;
+  return function() {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+}
+
 // Updates the menu depending on the scroll position
-async function updateMenu() {
+function updateMenu() {
   var viewportOffset = document.getElementById("home").getBoundingClientRect();
 
   // these are relative to the viewport
@@ -54,21 +62,30 @@ function updateDeviceType() {
 }
 
 /**
+ * Show/Hide Solo projects and Group projects on load
+ */
+function projectView() {
+  if (window.location.hash === "#group")
+    swapActiveProject()
+}
+
+/**
  * Toggle between Solo projects and Group projects
  */
 function toggleProjectView(obj) {
   // Swap activeProject and inactiveProject ids
-  var activeProjectId = obj.id;
-  if(activeProjectId === 'activeProject')
+  if(obj.id === 'activeProject')
     return;
 
-  var inactiveProjectId = (activeProjectId === 'activeProject') ? 'inactiveProject' : 'activeProject';
+  swapActiveProject()
+}
 
-  var activeProject = document.getElementById(activeProjectId);
-  var inactiveProject = document.getElementById(inactiveProjectId);
+function swapActiveProject() {
+  var activeProject = document.getElementById("activeProject");
+  var inactiveProject = document.getElementById('inactiveProject');
 
-  activeProject.id = inactiveProjectId;
-  inactiveProject.id = activeProjectId;
+  activeProject.id = 'inactiveProject';
+  inactiveProject.id = 'activeProject';
 
   // Toggle visibility of soloProjects and groupProjects
   var soloProjects = document.getElementById('soloProjects');
@@ -144,6 +161,11 @@ function init() {
   updateDeviceType();
 }
 
+const handleScroll = debounce(function() {
+  if (!mobileDevice) {
+    updateMenu()
+  }
+}, 100);
 
 /**
  * Event listeners
@@ -154,12 +176,8 @@ document.addEventListener("DOMContentLoaded", function(){
   setCurrentAge();
 });
 
-window.addEventListener('scroll',function(e) {
-  if (!mobileDevice) {
-    updateMenu();
-  }
-});
+window.addEventListener('scroll', handleScroll);
 
-window.addEventListener("resize", function(e) {
-  updateMenu();
+document.addEventListener("resize", function(e) {
+  updateMenu()
 });

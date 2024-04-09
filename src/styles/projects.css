@@ -82,10 +82,11 @@ section a:hover {
 }
 
 #activeProject {
+  border-top: 2px solid var(--primary-color);
 }
 
 #inactiveProject {
-  background: #0c0d0e;
+  background: #060606;
 }
 
 #inactiveProject:hover {

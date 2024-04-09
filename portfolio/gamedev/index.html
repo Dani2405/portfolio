@@ -24,6 +24,16 @@
   <link href="../../src/styles/index.css" rel="stylesheet">
   <link href="../../src/styles/projects.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7NBZDGBCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V7NBZDGBCC');
+  </script>
+
   <style>
     #headerProjectLogo {
       background-image: url("icon.png");
@@ -46,8 +56,8 @@
   </header>
 
   <div id="projectViewToggler">
-    <a onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
-    <a onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
+    <a href="#solo" onclick="toggleProjectView(this)" id="activeProject"><div>Solo Projects</div></a>
+    <a href="#group" onclick="toggleProjectView(this)" id="inactiveProject"><div>Group Projects</div></a>
   </div>
 
   <section class="project" id="soloProjects">
@@ -119,10 +129,22 @@
   <section class="project" id="groupProjects">
     <h3>Group Projects</h3>
     <div class="projectGroupItems">
+      <a href="https://www.patreon.com/greenhavenwildlife">
+        <div class="projectGroupItem">
+          <div class="projectGroupIcon" style="background-image: url('../../src/images/projects/group/GreenHavenWildlife/icon.png');"></div>
+          <h1>Green Haven:</br>Wildlife</h1>
+        </div>
+      </a>
+
+        <div class="projectGroupItem disabled">
+          <div class="projectGroupIcon" style="background-image: url('../../src/images/projects/group/LeonTheChameleon/logo.png'); background-size: inherit"></div>
+          <h1>Leon - The Chameleon:</br>Game Jam 2023.02</h1>
+        </div>
+
       <a href="./bgj20221">
         <div class="projectGroupItem">
           <div class="projectGroupIcon" style="background-image: url('./bgj20221/logo.png');"></div>
-          <h1>Brackeys</br>Game Jam 2022.1</h1>
+          <h1>Brackeys</br>Game Jam 2022.01</h1>
         </div>
       </a>
 
@@ -139,12 +161,14 @@
   <div id="footerComponent"></div>
 </body>
 <!-- JavaScript -->
-<script src="../../../src/scripts/main.js"></script>
-<script src="../../../src/scripts/components.js"></script>
-<script src="../../../src/twemoji/twemoji.min.js"></script>
+<script src="../../src/scripts/main.js"></script>
+<script src="../../src/scripts/components.js"></script>
+<script src="../../src/twemoji/twemoji.min.js"></script>
 <script>
   twemoji.parse(document.body,
-    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+    {base: '../../src/twemoji/', folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
   );
+
+  projectView()
 </script>
 </html>

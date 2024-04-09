@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/png" href="../src/images/favicon.png"/>
   <title>Coming soon! - Daniel Fischer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7NBZDGBCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V7NBZDGBCC');
+  </script>
+
 </head>
 <body>
   <div id="content">
     <h1 id="title">Coming Soon!</h1>
     <div id="screen">
       <div id="buttonContainer">
-        <img id="playButton" class="animate__animated animate__pulse animate__infinite animate__slow" src="src/assets/play.png" onclick="runGame()">
+        <img id="playButton" class="animate__animated animate__pulse animate__infinite animate__slow" src="./src/assets/play.png" onclick="runGame()">
       </div>
     </div>
     <div id="gameInfo">
@@ -20,5 +31,5 @@
     </div>
   </div>
 </body>
-<script src="src/scripts/behaviour.js"></script>
+<script src="./src/scripts/behaviour.js"></script>
 </html>
