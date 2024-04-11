@@ -165,7 +165,7 @@ const handleScroll = debounce(function() {
   if (!mobileDevice) {
     updateMenu()
   }
-}, 100);
+}, 50);
 
 /**
  * Event listeners
