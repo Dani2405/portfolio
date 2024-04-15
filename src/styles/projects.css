@@ -90,6 +90,7 @@ section a:hover {
   padding: 25px;
   font-size: 32px;
   height: 100%;
+  border-radius: 0 0 5px 5px;
 }
 
 #activeProject {
@@ -98,6 +99,17 @@ section a:hover {
 
 #inactiveProject {
   background: #060606;
+}
+
+#projectViewToggler #inactiveProject:nth-child(2) {
+  animation: glow .75s 2 alternate ease-out;
+}
+
+@keyframes glow {
+  to {
+    color: white;
+    box-shadow: 0 0px 10px rgb(191, 243, 255);
+  }
 }
 
 #inactiveProject:hover {
